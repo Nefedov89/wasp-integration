@@ -1,0 +1,29 @@
+{
+    "name": "nefedov89/wasp-integration",
+    "description": "Laravel API integration with wasp inventory system https://dri.waspinventorycloud.com",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">7.1.3",
+        "illuminate/support": "^5.8",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Nefedov",
+            "email": "nefedovs89@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nefedov89\\WaspIntegration\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nefedov89\\WaspIntegration\\ServiceProvider"
+            ]
+        }
+    }
+}
