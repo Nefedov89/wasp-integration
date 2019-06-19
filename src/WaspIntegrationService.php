@@ -6,7 +6,15 @@ namespace Nefedov89\WaspIntegration;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use Nefedov89\WaspIntegration\Traits\ApiAttachmentsTrait;
+use Nefedov89\WaspIntegration\Traits\ApiCustomerTrait;
+use Nefedov89\WaspIntegration\Traits\ApiItemPickPackShipOrderTrait;
+use Nefedov89\WaspIntegration\Traits\ApiItemPurchaseOrderTrait;
 use Nefedov89\WaspIntegration\Traits\ApiItemsTrait;
+use Nefedov89\WaspIntegration\Traits\ApiLocationsTrait;
+use Nefedov89\WaspIntegration\Traits\ApiSalesTaxCodeTrait;
+use Nefedov89\WaspIntegration\Traits\ApiSitesTrait;
+use Nefedov89\WaspIntegration\Traits\ApiTransactionsTrait;
 use function json_decode;
 
 /**
@@ -16,7 +24,15 @@ use function json_decode;
  */
 class WaspIntegrationService
 {
-    use ApiItemsTrait;
+    use ApiAttachmentsTrait,
+        ApiCustomerTrait,
+        ApiItemPickPackShipOrderTrait,
+        ApiItemPurchaseOrderTrait,
+        ApiItemsTrait,
+        ApiLocationsTrait,
+        ApiSalesTaxCodeTrait,
+        ApiSitesTrait,
+        ApiTransactionsTrait;
 
     /** @var Client */
     protected $httpClient;
