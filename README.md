@@ -1,5 +1,3 @@
-WASP inventory system API integration
-
-Wrapper for all API endpoints of WASP
+Laravel API endpoints wrapper for WASP inventory system
 
 See more here: https://dri.waspinventorycloud.com/Help/Api

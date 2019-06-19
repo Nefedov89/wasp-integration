@@ -1,6 +1,6 @@
 {
     "name": "nefedov89/wasp-integration",
-    "description": "Laravel API integration with wasp inventory system https://dri.waspinventorycloud.com",
+    "description": "Laravel API endpoints wrapper for WASP inventory system https://dri.waspinventorycloud.com",
     "minimum-stability": "dev",
     "require": {
         "php": ">7.1.3",
