@@ -52,7 +52,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->app->bind(WaspIntegrationService::class, function ($app) {
             return new WaspIntegrationService(
                 Config::get("{$this->configName}.user_access_token"),
-                Config::get("{$this->configName}.base_uri")
+                Config::get("{$this->configName}.api_base_url")
             );
         });
     }
