@@ -10,7 +10,7 @@ See more here: https://dri.waspinventorycloud.com/Help/Api
 Then you can use WaspIntegrationService as service from Laravel's service container
 
 ## Available methods of WaspIntegrationService
-##### You have to pass array $request parameter to each method. To see each $request data check doc page of every request. Use link below.  
+##### You have to pass array $request parameter to each method. To see each $request data check doc page of every request. Use links below.  
 
 ### ApiAttachments
 #### <a target="_blank" href="https://dri.waspinventorycloud.com/Help/Details?apiId=POST-public-api-attachments-uplodAttachmentsForForms">attachmentsUplodAttachmentsForForms</a>
