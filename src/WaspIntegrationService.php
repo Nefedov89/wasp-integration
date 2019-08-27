@@ -15,7 +15,7 @@ use Nefedov89\WaspIntegration\Traits\ApiLocationsTrait;
 use Nefedov89\WaspIntegration\Traits\ApiSalesTaxCodeTrait;
 use Nefedov89\WaspIntegration\Traits\ApiSitesTrait;
 use Nefedov89\WaspIntegration\Traits\ApiTransactionsTrait;
-use function json_decode;
+use function json_encode, json_decode;
 
 /**
  * Class WaspIntegrationService
@@ -74,13 +74,13 @@ class WaspIntegrationService
     ): array {
         $params = [
             'headers' => [
-                'Accept'        => 'application/json',
+                'Content-Type'  => 'application/json',
                 'Authorization' => "Bearer {$this->accessToken}",
             ],
         ];
 
         if ($payload !== null) {
-            $params['form_params'] = $payload;
+            $params['body'] = json_encode($payload);
         }
 
         try {
