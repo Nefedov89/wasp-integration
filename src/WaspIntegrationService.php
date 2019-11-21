@@ -80,7 +80,7 @@ class WaspIntegrationService
         ];
 
         if ($payload !== null) {
-            $params['json'] = json_encode($payload);
+            $params['json'] = $payload;
         }
 
         try {
