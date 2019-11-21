@@ -74,13 +74,13 @@ class WaspIntegrationService
     ): array {
         $params = [
             'headers' => [
-                'Content-Type'  => 'application/json',
+                'Accept'        => 'application/json',
                 'Authorization' => "Bearer {$this->accessToken}",
             ],
         ];
 
         if ($payload !== null) {
-            $params['body'] = json_encode($payload);
+            $params['json'] = json_encode($payload);
         }
 
         try {
