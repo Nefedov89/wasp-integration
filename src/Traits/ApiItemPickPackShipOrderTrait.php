@@ -86,7 +86,7 @@ trait ApiItemPickPackShipOrderTrait
     {
         return $this->request(
             'POST',
-            'ApiItemPurchaseOrder',
+            'ic/pickpackshiporder/deleteordersbynumber',
             $request
         );
     }
