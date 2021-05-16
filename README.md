@@ -5,7 +5,7 @@ See more here: https://dri.waspinventorycloud.com/Help/Api
 ## Instalation
 
 1. composer require nefedov89/wasp-integration
-2. par vendor:publish --provider="Nefedov89\WaspIntegration\ServiceProvider"
+2. php artisan vendor:publish --provider="Nefedov89\WaspIntegration\ServiceProvider"
 3. Set WASP_USER_ACCESS_TOKEN env variable
 
 Then you can use WaspIntegrationService as service from Laravel's service container
